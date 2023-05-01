@@ -226,8 +226,14 @@ if __name__ == "__main__":
     note_en = config["note_en"]
     if note_ch == "" and note_en == "":
         # 获取词霸每日金句
-        note_ch, note_en = get_ciba()
+a=random.randint(1, 5)
+if(a==1):note_ch="亲爱的夏夏，请喝水啦";
+if(a==2):note_ch="夏夏是不是有一点渴，宝宝快去喝水";
+if(a==3):note_ch="口干舌燥，来杯白开水喝喝";
+if(a==4):note_ch="好热啊，真想喝水";
+if(a==5):note_ch="到点啦到点啦，要去喝水啦";
+        
     # 公众号推送消息
     for user in users:
-        send_message(user, accessToken, region, weather, temp, wind_dir, note_ch, note_en)
+        send_message(note_ch)
     os.system("pause")
