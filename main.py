@@ -224,8 +224,7 @@ if __name__ == "__main__":
     weather, temp, wind_dir = get_weather(region)
     note_ch = config["note_ch"]
     note_en = config["note_en"]
-    if note_ch == "" and note_en == "":
-        # 获取词霸每日金句
+
 a=random.randint(1, 5)
 if(a==1):note_ch="亲爱的夏夏，请喝水啦";
 if(a==2):note_ch="夏夏是不是有一点渴，宝宝快去喝水";
