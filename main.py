@@ -234,5 +234,5 @@ if(a==5):note_ch="到点啦到点啦，要去喝水啦";
         
     # 公众号推送消息
     for user in users:
-        send_message(note_ch)
+        send_message(user, accessToken,note_ch)
     os.system("pause")
